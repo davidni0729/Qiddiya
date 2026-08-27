@@ -13,7 +13,9 @@ export default function RegisterPage() {
   return (
     <main className="register-page">
       <aside className="register-visual">
-        <Image src={`${publicBasePath}/images/qiddiya-hero.jpg`} alt="光纖鯨魚穿越未來台北城市" fill priority sizes="(max-width: 900px) 100vw, 42vw" />
+        <div className="register-visual-media">
+          <Image src={`${publicBasePath}/images/qiddiya-hero.jpg`} alt="光纖鯨魚穿越未來台北城市" fill priority sizes="(max-width: 900px) 100vw, 42vw" />
+        </div>
         <div className="register-visual-shade" />
         <Link className="register-home" href="/"><ArrowLeft size={18} aria-hidden="true" />返回 Qiddiya</Link>
         <div className="register-visual-copy">

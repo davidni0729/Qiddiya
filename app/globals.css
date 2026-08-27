@@ -165,7 +165,8 @@ img { display: block; }
 /* Registration */
 .register-page { min-height: 100svh; display: grid; grid-template-columns: 42% 58%; background: #eef2ed; color: var(--ink); }
 .register-visual { position: sticky; top: 0; height: 100svh; overflow: hidden; background: #051a58; color: var(--ice); }
-.register-visual > img { object-fit: cover; object-position: 56% center; }
+.register-visual-media { position: absolute; inset: 0; }
+.register-visual-media > img { object-fit: cover; object-position: 56% center; }
 .register-visual-shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0, 7, 39, 0.48), rgba(0, 10, 45, 0.1) 40%, rgba(0, 8, 38, 0.9)); }
 .register-home { position: absolute; z-index: 2; top: 34px; left: 38px; display: inline-flex; align-items: center; gap: 10px; font-size: 12px; }
 .register-home:hover { color: var(--acid); }
