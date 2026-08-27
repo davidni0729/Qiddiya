@@ -1,6 +1,5 @@
-const QIDDIYA_SPREADSHEET_ID = "1SZSfYNI8TYT_UnuZmPtX3AY6pphaiVeHcBY60mW87z4";
-
 function createQiddiyaRegistrationForm() {
+  const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
   const properties = PropertiesService.getScriptProperties();
   const existingFormId = properties.getProperty("QIDDIYA_FORM_ID");
 
@@ -126,7 +125,7 @@ function createQiddiyaRegistrationForm() {
     .setHelpText("未選擇不影響本次預先登記。")
     .setChoiceValues(["是", "否"]);
 
-  form.setDestination(FormApp.DestinationType.SPREADSHEET, QIDDIYA_SPREADSHEET_ID);
+  form.setDestination(FormApp.DestinationType.SPREADSHEET, spreadsheet.getId());
   form.setAcceptingResponses(true);
 
   properties.setProperty("QIDDIYA_FORM_ID", form.getId());
@@ -135,7 +134,7 @@ function createQiddiyaRegistrationForm() {
 }
 
 function writeFormLinks_(form) {
-  const spreadsheet = SpreadsheetApp.openById(QIDDIYA_SPREADSHEET_ID);
+  const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
   const sheetName = "Google Form 設定";
   let sheet = spreadsheet.getSheetByName(sheetName);
   if (!sheet) sheet = spreadsheet.insertSheet(sheetName, 0);

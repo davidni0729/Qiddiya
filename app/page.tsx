@@ -29,13 +29,15 @@ const principles = [
   { title: "FANTASY IMAGINATION", label: "奇幻創想", Icon: GalleryVerticalEnd },
 ];
 
+const publicBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export default function Home() {
   return (
     <main>
       <SiteHeader />
 
       <section className="hero" aria-labelledby="hero-title">
-        <Image className="hero-image" src="/images/qiddiya-hero.jpg" alt="光纖結構的巨型未來鯨魚，懸浮於台北城市上空" fill priority sizes="100vw" />
+        <Image className="hero-image" src={`${publicBasePath}/images/qiddiya-hero.jpg`} alt="光纖結構的巨型未來鯨魚，懸浮於台北城市上空" fill priority sizes="100vw" />
         <div className="hero-shade" />
         <div className="hero-grid" aria-hidden="true" />
         <div className="hero-content page-shell">
@@ -99,7 +101,7 @@ export default function Home() {
 
       <section className="world" id="world">
         <article className="scene scene-dark">
-          <div className="scene-media"><Image src="/images/contamination-corridor.jpg" alt="以投影映出工業污染資料的沉浸式光影廊道" fill sizes="(max-width: 800px) 100vw, 58vw" /></div>
+          <div className="scene-media"><Image src={`${publicBasePath}/images/contamination-corridor.jpg`} alt="以投影映出工業污染資料的沉浸式光影廊道" fill sizes="(max-width: 800px) 100vw, 58vw" /></div>
           <div className="scene-copy">
             <span className="scene-code">WORLD / 001</span><p className="eyebrow">THE INVISIBLE BECOMES VISIBLE</p><h2>讓城市看見<br />原本看不見的事。</h2>
             <p>水門、河堤與工業地景不再只是背景。污染數據化為光的紋理，觀眾走進現場，也走進環境變化留下的痕跡。</p>
@@ -107,7 +109,7 @@ export default function Home() {
           </div>
         </article>
         <article className="scene scene-light scene-reverse">
-          <div className="scene-media"><Image src="/images/energy-core.jpg" alt="電子音樂舞台中心發光的生物能量核心裝置" fill sizes="(max-width: 800px) 100vw, 58vw" /></div>
+          <div className="scene-media"><Image src={`${publicBasePath}/images/energy-core.jpg`} alt="電子音樂舞台中心發光的生物能量核心裝置" fill sizes="(max-width: 800px) 100vw, 58vw" /></div>
           <div className="scene-copy">
             <span className="scene-code">WORLD / 002</span><p className="eyebrow">SOUND BECOMES ARCHITECTURE</p><h2>聲音不是配樂。<br />它是空間的骨架。</h2>
             <p>電子音樂的頻率驅動光雕、裝置與即時視覺。每一段節奏都改變場域狀態，讓舞池成為持續生成的未來建築。</p>
@@ -115,7 +117,7 @@ export default function Home() {
           </div>
         </article>
         <article className="scene scene-acid">
-          <div className="scene-media"><Image src="/images/eco-avant-garde.jpg" alt="結合植物形態與透明未來材質的永續裝置藝術" fill sizes="(max-width: 800px) 100vw, 58vw" /></div>
+          <div className="scene-media"><Image src={`${publicBasePath}/images/eco-avant-garde.jpg`} alt="結合植物形態與透明未來材質的永續裝置藝術" fill sizes="(max-width: 800px) 100vw, 58vw" /></div>
           <div className="scene-copy">
             <span className="scene-code">WORLD / 003</span><p className="eyebrow">ECOLOGY AS A FUTURE AESTHETIC</p><h2>永續不是口號。<br />它是新的感官語言。</h2>
             <p>從模組化裝置、循環材料到可延展的內容系統，Qiddiya 將環境意識轉譯成令人著迷的未來美學。</p>
@@ -126,7 +128,7 @@ export default function Home() {
 
       <section className="future-system section-pad">
         <div className="page-shell system-layout">
-          <div className="system-visual"><Image src="/images/modular-system.jpg" alt="可重組與延伸的未來光影裝置模組" fill sizes="(max-width: 900px) 100vw, 50vw" /></div>
+          <div className="system-visual"><Image src={`${publicBasePath}/images/modular-system.jpg`} alt="可重組與延伸的未來光影裝置模組" fill sizes="(max-width: 900px) 100vw, 50vw" /></div>
           <div className="system-copy">
             <p className="eyebrow">AN EXPANDING CULTURAL IP</p><h2>從一晚活動，長成一套可移動的未來系統。</h2>
             <p>首場由 TianYen 發起，MClub 作為首場贊助場域。未來可依不同城市、建築與環境議題持續重組，延伸為系列活動、裝置展演、品牌共創與城市夜遊內容。</p>
@@ -135,8 +137,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="register-cta">
-        <Image src="/images/vvip-deck.jpg" alt="未來城市夜景中的高端沉浸式光影音樂空間" fill sizes="100vw" /><div className="register-overlay" />
+      <section className="register-cta" id="register">
+        <Image src={`${publicBasePath}/images/vvip-deck.jpg`} alt="未來城市夜景中的高端沉浸式光影音樂空間" fill sizes="100vw" /><div className="register-overlay" />
         <div className="page-shell register-cta-content">
           <div><p className="eyebrow">FIRST SIGNAL ACCESS</p><h2>接收第一道訊號。</h2><p>預先登記首場活動資訊、優先名單與限定體驗公告。登記不等同取得入場資格，正式辦法將另行通知。</p></div>
           <Link className="button button-acid" href="/register"><TicketCheck size={20} strokeWidth={1.6} aria-hidden="true" />預先登記<ArrowRight size={18} aria-hidden="true" /></Link>
