@@ -6,7 +6,10 @@ TianYen 發起的未來光影音樂派對宣傳與預先登記網站。MClub 為
 
 [https://davidni0729.github.io/Qiddiya/](https://davidni0729.github.io/Qiddiya/)
 
-網站採用與 Freedom Party 相同的公開架構：Next.js 靜態輸出、GitHub Pages 自動發布、Google Form 預先登記。表單回覆保存在私人 Google Sheet，管理網址不放入公開網站或程式庫。
+英文版：
+[https://davidni0729.github.io/Qiddiya/en/](https://davidni0729.github.io/Qiddiya/en/)
+
+網站提供繁體中文與英文兩種語言，採用與 Freedom Party 相同的公開架構：Next.js 靜態輸出、GitHub Pages 自動發布、Google Form 預先登記。表單回覆保存在私人 Google Sheet，管理網址不放入公開網站或程式庫。
 
 預先登記表：
 [Qiddiya 奇地亞｜未來光影音樂派對預先登記](https://docs.google.com/forms/d/e/1FAIpQLSdKQR89NVsvXuGEm92o3EUt3AQCkdUJD_PRTrR18UxanCAkmg/viewform)

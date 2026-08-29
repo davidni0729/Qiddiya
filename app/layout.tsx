@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { DocumentLanguage } from "@/components/document-language";
 import "./globals.css";
 
 const canonicalUrl = "https://davidni0729.github.io/Qiddiya/";
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
   description:
     "TianYen 發起的未來光影音樂體驗。接收 Qiddiya 城市訊號，預先登記首場活動資訊。",
   metadataBase: new URL(canonicalUrl),
-  alternates: { canonical: canonicalUrl },
+  alternates: { canonical: canonicalUrl, languages: { "zh-Hant": canonicalUrl, en: `${canonicalUrl}en/` } },
   icons: { icon: "/Qiddiya/favicon.svg" },
   openGraph: {
     title: "Qiddiya 奇地亞｜城市，進入下一個頻率",
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="zh-Hant">
-      <body>{children}</body>
+      <body><DocumentLanguage />{children}</body>
     </html>
   );
 }

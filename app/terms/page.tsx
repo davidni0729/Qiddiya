@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
 import { LegalLayout } from "@/components/legal-layout";
 
-export const metadata: Metadata = { title: "使用條款" };
+export const metadata: Metadata = {
+  title: "使用條款",
+  alternates: {
+    canonical: "https://davidni0729.github.io/Qiddiya/terms/",
+    languages: { "zh-Hant": "https://davidni0729.github.io/Qiddiya/terms/", en: "https://davidni0729.github.io/Qiddiya/en/terms/" },
+  },
+};
 
 export default function TermsPage() {
   return (
-    <LegalLayout eyebrow="TERMS OF SIGNAL" title="使用條款" updated="2026 年 8 月 27 日">
+    <LegalLayout locale="zh" eyebrow="TERMS OF SIGNAL" title="使用條款" updated="2026 年 8 月 27 日" zhHref="/terms" enHref="/en/terms">
       <section><h2>一、網站用途</h2><p>本網站提供 Qiddiya 奇地亞之概念介紹、活動資訊與預先登記服務。首波預告期間的日期、場域、內容、演出與參與辦法均可能調整，以正式公告為準。</p></section>
       <section><h2>二、預先登記</h2><p>完成預先登記僅代表加入優先通知名單，不構成門票、訂位、免費入場資格或保證參與。正式票務、邀請與入場規則將另行公布。</p></section>
       <section><h2>三、資料正確性</h2><p>登記者應提供可供聯繫的正確資料，不得冒用他人身分、提交惡意內容或以自動化方式干擾服務。重複 Email 將視為同一筆登記訊號。</p></section>
