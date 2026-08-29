@@ -17,7 +17,7 @@ function createQiddiyaRegistrationForm() {
   form
     .setDescription(
       "城市，進入下一個頻率。\n\n" +
-      "Qiddiya 奇地亞由 TianYen 發起，MClub 為首場贊助場域。" +
+      "Qiddiya 奇地亞由 TianYen 發起，MClub 為首場合作場域。" +
       "本表單為活動優先通知與參與需求登記，不代表門票、訂位或保證入場。" +
       "正式日期、場域、票務與參與方式將另行公告。"
     )

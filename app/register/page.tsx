@@ -23,7 +23,7 @@ export default function RegisterPage() {
           <h1>加入第一批<br />城市訊號接收者。</h1>
           <p>未來城市 × 永續前衛 × 奇幻創想</p>
         </div>
-        <small className="register-credit">TIANYEN PRESENTS / MCLUB FIRST VENUE SPONSOR</small>
+        <small className="register-credit">TIANYEN PRESENTS / MCLUB FIRST VENUE PARTNER</small>
       </aside>
       <section className="register-panel">
         <div className="register-panel-inner">

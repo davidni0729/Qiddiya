@@ -56,7 +56,7 @@ export default function Home() {
               <Link className="button button-primary" href="/register">接收活動訊號<ArrowRight size={19} aria-hidden="true" /></Link>
               <Link className="button button-ghost" href="#experience">探索體驗<ArrowDown size={18} aria-hidden="true" /></Link>
             </div>
-            <div className="venue-credit"><span>MCLUB</span><small>FIRST VENUE SPONSOR</small></div>
+            <div className="venue-credit"><span>MCLUB</span><small>FIRST VENUE PARTNER</small></div>
           </div>
         </div>
       </section>
@@ -131,7 +131,7 @@ export default function Home() {
           <div className="system-visual"><Image src={`${publicBasePath}/images/modular-system.jpg`} alt="可重組與延伸的未來光影裝置模組" fill sizes="(max-width: 900px) 100vw, 50vw" /></div>
           <div className="system-copy">
             <p className="eyebrow">AN EXPANDING CULTURAL IP</p><h2>從一晚活動，長成一套可移動的未來系統。</h2>
-            <p>首場由 TianYen 發起，MClub 作為首場贊助場域。未來可依不同城市、建築與環境議題持續重組，延伸為系列活動、裝置展演、品牌共創與城市夜遊內容。</p>
+            <p>首場由 TianYen 發起，MClub 作為首場合作場域。未來可依不同城市、建築與環境議題持續重組，延伸為系列活動、裝置展演、品牌共創與城市夜遊內容。</p>
             <div className="system-specs"><span><b>01</b> 場域共創</span><span><b>02</b> 品牌聯名</span><span><b>03</b> 裝置巡迴</span><span><b>04</b> 內容再傳播</span></div>
           </div>
         </div>
@@ -151,7 +151,7 @@ export default function Home() {
           <div className="faq-list">
             <details><summary>活動日期與地點確定了嗎？<span>+</span></summary><p>目前為首波預告階段，日期與完整場域資訊將於正式公告時同步通知登記者。</p></details>
             <details><summary>完成登記就能入場嗎？<span>+</span></summary><p>預先登記代表加入優先通知名單，不等同門票或保證入場。正式票務與入場辦法將另行公布。</p></details>
-            <details><summary>Qiddiya 奇地亞由誰發起？<span>+</span></summary><p>活動由光影品牌 TianYen 發起，MClub 為首場贊助場域。</p></details>
+            <details><summary>Qiddiya 奇地亞由誰發起？<span>+</span></summary><p>活動由光影品牌 TianYen 發起，MClub 為首場合作場域。</p></details>
           </div>
         </div>
       </section>
