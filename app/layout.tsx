@@ -3,6 +3,7 @@ import { DocumentLanguage } from "@/components/document-language";
 import "./globals.css";
 
 const canonicalUrl = "https://davidni0729.github.io/Qiddiya/";
+const publicBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 export const metadata: Metadata = {
   title: {
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
     "TianYen 發起的未來光影音樂體驗。接收 Qiddiya 城市訊號，預先登記首場活動資訊。",
   metadataBase: new URL(canonicalUrl),
   alternates: { canonical: canonicalUrl, languages: { "zh-Hant": canonicalUrl, en: `${canonicalUrl}en/` } },
-  icons: { icon: "/Qiddiya/favicon.svg" },
+  icons: { icon: `${publicBasePath}/favicon.svg` },
   openGraph: {
     title: "Qiddiya 奇地亞｜城市，進入下一個頻率",
     description: "未來城市、永續前衛、奇幻創想。接收首場未來光影音樂派對訊號。",
